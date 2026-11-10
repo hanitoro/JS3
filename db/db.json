@@ -1,0 +1,10 @@
+[
+  { "id": "001", "name": "Белая футболка", "price": 25, "label": "New", "gender": "Men", "category": "Clothes", "img": "https://placehold.co/300x300/eeeeee/333333?text=T-shirt", "description": "Базовая хлопковая футболка" },
+  { "id": "002", "name": "Шорты", "price": 35, "label": "", "gender": "Men", "category": "Clothes", "img": "https://placehold.co/300x300/cfe8ff/333333?text=Shorts", "description": "Лёгкие летние шорты" },
+  { "id": "003", "name": "Кроссовки", "price": 90, "label": "Bestseller", "gender": "Men", "category": "Shoes", "img": "https://placehold.co/300x300/ffd9c2/333333?text=Sneakers", "description": "Удобные кроссовки на каждый день" },
+  { "id": "004", "name": "Рюкзак", "price": 55, "label": "", "gender": "Men", "category": "Accessories", "img": "https://placehold.co/300x300/d9f2d9/333333?text=Backpack", "description": "Городской рюкзак" },
+  { "id": "005", "name": "Платье", "price": 70, "label": "New", "gender": "Women", "category": "Clothes", "img": "https://placehold.co/300x300/ffd6e8/333333?text=Dress", "description": "Летнее платье" },
+  { "id": "006", "name": "Лоферы", "price": 85, "label": "", "gender": "Women", "category": "Shoes", "img": "https://placehold.co/300x300/e6dcff/333333?text=Loafers", "description": "Кожаные лоферы" },
+  { "id": "007", "name": "Сумка", "price": 60, "label": "Bestseller", "gender": "Women", "category": "Accessories", "img": "https://placehold.co/300x300/fff3b0/333333?text=Bag", "description": "Сумка через плечо" },
+  { "id": "008", "name": "Солнечные очки", "price": 20, "label": "", "gender": "Women", "category": "Accessories", "img": "https://placehold.co/300x300/c9f0f0/333333?text=Glasses", "description": "Очки с UV-защитой" }
+]

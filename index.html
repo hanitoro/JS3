@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин одежды</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header py-3 border-bottom">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-3">
+            <a href="#" class="logo fw-bold fs-3 text-decoration-none text-dark">SHOP</a>
+
+            <nav class="d-flex gap-3 flex-wrap">
+                <a href="#" class="navigation-link" data-field="all">Все</a>
+                <a href="#" class="navigation-link" data-field="gender">Men</a>
+                <a href="#" class="navigation-link" data-field="gender">Women</a>
+                <a href="#" class="navigation-link" data-field="category">Clothes</a>
+                <a href="#" class="navigation-link" data-field="category">Shoes</a>
+                <a href="#" class="navigation-link" data-field="category">Accessories</a>
+            </nav>
+
+            <button class="btn btn-dark button-cart">Корзина</button>
+        </div>
+    </header>
+
+    <!-- Слайдер (Swiper) -->
+    <section class="container my-4">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide slide-1">Новая коллекция</div>
+                <div class="swiper-slide slide slide-2">Скидки до 30%</div>
+                <div class="swiper-slide slide slide-3">Бесплатная доставка</div>
+            </div>
+            <button class="slider-prev btn btn-light">&larr;</button>
+            <button class="slider-next btn btn-light">&rarr;</button>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <h2 class="mb-4">Каталог</h2>
+        <div class="row long-goods-list"></div>
+    </main>
+
+    <a href="#" class="scroll-link to-top btn btn-dark" data-scroll="top">&uarr; Наверх</a>
+
+    <!-- Модальное окно корзины -->
+    <div class="overlay modal-cart">
+        <div class="modal-window">
+            <button class="modal-close btn-close" aria-label="Закрыть"></button>
+            <h3 class="mb-3">Корзина</h3>
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th></th>
+                        <th>Кол-во</th>
+                        <th></th>
+                        <th>Сумма</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table__goods"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-end fw-bold">Итого:</td>
+                        <td colspan="2" class="card-table__total fw-bold">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

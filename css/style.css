@@ -1,0 +1,105 @@
+.navigation-link {
+    color: #212529;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.swiper {
+    position: relative;
+}
+
+.slide {
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.slide-1 { background: #495057; }
+.slide-2 { background: #c92a2a; }
+.slide-3 { background: #1971c2; }
+
+.slider-prev,
+.slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-prev { left: 12px; }
+.slider-next { right: 12px; }
+
+.goods-card {
+    position: relative;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.goods-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.goods-card__label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #2f9e44;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+.goods-card .btn {
+    margin-top: auto;
+}
+
+.to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* модальное окно: по умолчанию скрыто, класс show его показывает */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.show {
+    display: flex;
+}
+
+.modal-window {
+    position: relative;
+    background: #fff;
+    width: min(800px, 95vw);
+    max-height: 90vh;
+    overflow: auto;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
